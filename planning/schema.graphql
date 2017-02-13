@@ -1,0 +1,68 @@
+React (UI Framework), Relay (Data Fetching)
+
+# Explorations
+{
+  viewer(id: "some-id") {
+    explorations(first: 20) {
+      edges {
+        node {
+          problem
+          author
+          offering {
+            name
+          }
+        }
+      }
+    }
+  }
+}
+
+type Exploration {
+  problem: string;
+  author: User;
+  offering: Offering;
+  personas: [Persona];
+  snapshots: [Snapshot];
+}
+
+type User {
+  firstName: string;
+  lastName: string;
+  fullName: string;
+  bio: string;
+  email: string;
+  avatar_url: string;
+  explorations: [Exploration];
+  snapshots: [Snapshots];
+  offerings: [Offering];
+  organizations: [Organization];
+}
+
+type Offering {
+  name: string;
+  organization: Organization;
+  members: [User];
+  explorations: [Exploration];
+  snapshots: [Snapshot];
+}
+
+type Organization {
+  name: string;
+  offerings: [Offering];
+  members: [User];
+  personas: [Persona];
+  explorations: [Exploration];
+  snapshots: [Snapshots];
+}
+
+type Persona {
+  name: string;
+  description: string;
+  offerings: [Offering];
+}
+
+type Snapshot {
+  title: string;
+  prompt: string;
+  image_url: string;
+}
