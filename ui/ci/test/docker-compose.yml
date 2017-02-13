@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+  ui:
+    build:
+      context: ../../
+      dockerfile: ci/test/Dockerfile
+    ports:
+      - "8008:8008"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8008

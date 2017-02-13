@@ -3,6 +3,13 @@ defmodule Oscillate.Error do
   Utility module for generating error messages for GraphQL Fields.
   """
 
+  @spec internal_error() :: String.t
+  def internal_error() do
+    """
+    Whoops, something went wrong.
+    """
+  end
+
   @spec not_found(type: String.t, id: String.t) :: String.t
   def not_found(type: type, id: id) do
     """

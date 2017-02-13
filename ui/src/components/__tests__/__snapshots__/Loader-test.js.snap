@@ -1,0 +1,27 @@
+exports[`Loader component should render 1`] = `
+<div
+  className="loader">
+  <svg
+    className="loader__svg"
+    viewBox="-75 -75 150 150">
+    <circle
+      cx="0"
+      cy="0"
+      r="37.5" />
+  </svg>
+</div>
+`;
+
+exports[`Loader component should render 2`] = `
+<div
+  className="loader loader--stop">
+  <svg
+    className="loader__svg"
+    viewBox="-75 -75 150 150">
+    <circle
+      cx="0"
+      cy="0"
+      r="37.5" />
+  </svg>
+</div>
+`;

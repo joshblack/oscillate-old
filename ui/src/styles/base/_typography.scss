@@ -1,0 +1,96 @@
+@import 'fonts';
+
+$type-scale-ratio: 1.25;
+$font-stack: 'Helvetica Neue for IBM', -apple-system, system-ui, 'Helvetica Neue', Arial, Roboto;
+
+@mixin font--bold {
+  font-family: $font-stack;
+  font-weight: 600;
+}
+
+@mixin font {
+  font-family: $font-stack;
+  font-weight: 400;
+}
+
+@mixin font--light {
+  font-family: $font-stack;
+  font-weight: 300;
+}
+
+$input-font-size: 1rem * $type-scale-ratio * $type-scale-ratio * $type-scale-ratio;
+
+/**
+ * The current semantics for our Typography current follows the hierarchy:
+ * Headline -> Title -> Subtitle -> Subheading -> Body -> Caption
+ *
+ * You can use native HTML elements, or leverage the namespaced classes.
+ */
+h1,
+.ia-headline {
+  @include font;
+
+  font-size: 1rem * $type-scale-ratio * $type-scale-ratio * $type-scale-ratio;
+  margin: 0;
+}
+
+h2,
+.ia-title {
+  @include font;
+
+  font-size: 1rem * $type-scale-ratio * $type-scale-ratio;
+}
+
+h3,
+.ia-subtitle {
+  @include font;
+
+  font-size: 1rem * $type-scale-ratio;
+}
+
+h4,
+.ia-subheading {
+  @include font--bold;
+
+  font-size: 1rem;
+}
+
+p,
+.ia-body {
+  @include font;
+
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.ia-link {
+  @include font--bold;
+
+  font-size: 1rem;
+  color: $purple-50;
+  text-decoration: none;
+  transition: 0.3s color ease;
+  cursor: pointer;
+}
+
+.ia-link:hover {
+  color: $purple-70;
+}
+
+.ia-link--disabled,
+.ia-link--disabled:hover {
+  color: $gray-50;
+  cursor: inherit;
+}
+
+strong {
+  @include font--bold;
+
+  font-size: 1rem;
+}
+
+.caption {
+  @include font;
+
+  font-size: 1rem / $type-scale-ratio;
+}

@@ -1,0 +1,10 @@
+---
+applications:
+- name: oscillate-ui-staging
+  host: oscillate-ui-staging
+  memory: 128M
+  disk_quota: 256M
+  instances: 1
+  env:
+    NODE_ENV: staging
+  command: npm start

@@ -1,0 +1,12 @@
+exports[`NotFound Component should render 1`] = `
+<section>
+  <p>
+    Route not found
+  </p>
+  <a
+    onClick={[Function]}
+    style={Object {}}>
+    Go back Home
+  </a>
+</section>
+`;

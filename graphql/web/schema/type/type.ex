@@ -8,4 +8,5 @@ defmodule Oscillate.Schema.Type do
 
   import_types Oscillate.Schema.Type.Node
   import_types Oscillate.Schema.Type.Viewer
+  import_types Oscillate.Schema.Type.User
 end

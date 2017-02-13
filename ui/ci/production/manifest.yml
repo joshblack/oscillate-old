@@ -1,0 +1,8 @@
+---
+applications:
+- name: oscillate-ui-prod
+  host: stardust-ui-master
+  memory: 128M
+  disk_quota: 256M
+  instances: 3
+  command: npm start

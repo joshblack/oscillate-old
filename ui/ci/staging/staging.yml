@@ -1,0 +1,13 @@
+auth:
+  clientID: ZjJhZmRlYTItZDkwMC00
+  clientSecret: Zjc1ZWE2ODgtMWFlYy00
+  callbackURL: https://stardust-ui-staging.stage1.mybluemix.net/auth/sso/callback
+  tokenURL: https://idaas.iam.ibm.com/idaas/oidc/endpoint/default/token
+  authorizationURL: https://idaas.iam.ibm.com/idaas/oidc/endpoint/default/authorize
+  issuerURL: https://idaas.iam.ibm.com
+session:
+  secret: STARDUST
+stardust:
+  username: null
+  password: null
+  url: null

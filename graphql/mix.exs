@@ -18,9 +18,22 @@ defmodule Oscillate.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Oscillate, []},
-     applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :absinthe, :absinthe_plug,
-                    :absinthe_ecto, :absinthe_relay, :ex_machina]]
+     applications: [
+       :phoenix,
+       :phoenix_pubsub,
+       :cowboy,
+       :logger,
+       :gettext,
+       :phoenix_ecto,
+       :postgrex,
+       :absinthe,
+       :absinthe_plug,
+       :absinthe_ecto,
+       :absinthe_relay,
+       :ex_machina,
+       :oauth,
+       :ueberauth_github,
+     ]]
   end
 
   # Specifies which paths to compile per environment.
@@ -45,6 +58,10 @@ defmodule Oscillate.Mixfile do
       {:credo, "~> 0.5", only: [:dev, :test]},
       {:ex_machina, "~> 1.0"},
       {:slugger, "~> 0.1.0"},
+      {:ueberauth, "~> 0.2"},
+      {:oauth, github: "tim/erlang-oauth"},
+      {:ueberauth_github, "~> 0.4"},
+      {:guardian, "~> 0.14"},
     ]
   end
 

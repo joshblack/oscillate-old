@@ -1,0 +1,46 @@
+/**
+ * Include IBM Design's Official Color package.
+ *
+ * This module provides the following functions for us to use:
+ *
+ * color($palette, ?$tone: 'core', ?$alpha: 1.0): hex | rgba
+ * color-tint($color, $amount): hex
+ * color-shade($color, $amount): hex
+ *
+ * For more documentation, visit:
+ * https://www.npmjs.com/package/ibm-design-colors
+ */
+@import '~ibm-design-colors/ibm-colors';
+
+$white: color('white');
+
+$neutral-white-40: color('neutral-white', 4);
+
+$gray-1: color('gray', 1);
+$gray-10: color('gray', 10);
+$gray-20: color('gray', 20);
+$gray-30: color('gray', 30);
+$gray-40: color('gray', 40);
+$gray-50: color('gray', 50);
+$gray-60: color('gray', 60);
+$gray-70: color('gray', 70);
+$gray-80: color('gray', 80);
+$gray-90: color('gray', 90);
+
+$purple-1: color('purple', 1);
+$purple-10: color('purple', 10);
+$purple-20: color('purple', 20);
+$purple-30: color('purple', 30);
+$purple-40: color('purple', 40);
+$purple-50: color('purple', 50);
+$purple-60: color('purple', 60);
+$purple-70: color('purple', 70);
+$purple-80: color('purple', 80);
+$purple-90: color('purple', 90);
+
+// Status Colors
+$success: #00c465;
+$warning: #fdce00;
+$warning-severe: #fd8c00;
+$error: #dc003f;
+$critical: #78002a;

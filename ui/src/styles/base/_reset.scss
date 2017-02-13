@@ -1,0 +1,33 @@
+/**
+ * We're including normalize initially to help make sure that the browsers that
+ * we support render all elements consistently and in line with modern
+ * standards.
+ *
+ * As the project grows, more than likely this dependency will drop as we
+ * should have styles in place to handle these inconsistencies.
+ */
+@import '~normalize.css';
+
+// Alter some of the normalize styles to fit into our guidelines
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}

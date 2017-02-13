@@ -13,8 +13,38 @@ erl_crash.dump
 # Alternatively, you may comment the line below and commit the
 # secrets file as long as you replace its contents by environment
 # variables.
-config/prod.secret.exs
+graphql/config/prod.secret.exs
+graphql/config/dev.secret.exs
 
 # Ignore System-specific files
 .DS_Store
 
+# Ignore generated folders
+node_modules/
+dist/
+coverage/
+build/
+
+# Ignore error logs
+npm-debug.log
+selenium-debug.log
+
+# Ignore our npmrc for build-related steps
+.npmrc
+
+# Ignore WebStorm files
+.idea/
+
+# Ignore Maven files
+node/
+target/
+
+### Eclipse ###
+.classpath
+.project
+.factorypath
+.settings/
+bin/
+logs/
+/.gradle/
+/docker_info.properties

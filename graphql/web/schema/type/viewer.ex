@@ -6,10 +6,13 @@ defmodule Oscillate.Schema.Type.Viewer do
   """
 
   # alias Oscillate.Resolver.Team
+  alias Oscillate.UserResolver
 
   use Oscillate.Web, :type
 
   object :viewer do
-    field :foo, :string
+    field :info, type: :user do
+      resolve &UserResolver.whoami/2
+    end
   end
 end
